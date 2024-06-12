@@ -914,3 +914,54 @@ strong {
     left: 42px;
   }
 }
+.card {
+  width: 500px;
+  height: 600px;
+  background: #117ee3;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+  margin: auto;
+  margin-bottom: 100px;
+ }
+ 
+ .card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #ffffff;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+ }
+ 
+ .card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 45px;
+ }
+ 
+ .card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+ }
+ 
+ .card .img {
+  width: 70px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+ }
+ 
+
+ input, select , label{
+  display: block;
+  margin: auto;
+ }
+ 

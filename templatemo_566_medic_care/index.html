@@ -130,50 +130,33 @@
                 <div class="container">
                     <div class="row">
                     
-                        <div class="col-lg-8 col-12 mx-auto">
-                            <div class="booking-form">
+                       <form id="uform">
+                        <input type="text" id="name" placeholder="Full Name">
+                        <input type="password" id="pass" placeholder="Password">
+                        <input type="text" id="gender" placeholder="Gender">
+                        <input type="date" id="date" placeholder="5/2/2010">
+                        <input type="text" id="age" placeholder="AGE">
+                        <input type="text" id="phone" placeholder="Phone number">
+                        <label for="cars">Choose a disaster:</label>
+                            <select name="disasters" id="diss">
+                                <option value="volvo">Heart Disease
+                                </option>
+                                <option value="saab">Hypertension</option>
+                                <option value="opel">Asthma</option>
+                                <option value="audi">Cancer</option>
+                                <option value="audi">No </option>
+                                <option value="audi">Cancer</option>
+                            </select>
+
+
+                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
+                            <input type="submit" id="submit-button" value="submit">
+                        </div>
+                    
+                       </form>
+
+                                       
                                 
-                                <h2 class="text-center mb-lg-3 mb-2">Book an appointment</h2>
-                            
-                                <form id="uform" role="form" action="#booking" method="post">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
-                                        </div>
-                                        
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="Password" name="password" id="password" class="form-control" placeholder="Password" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="telephone" name="phone" id="phone" class="form-control" placeholder="Phone: 123-456-7890">
-                                        </div>
-
-                                        <div class="col-lg-6 col-12">
-                                            <input type="date" name="date" id="date" value="" class="form-control">
-                                            <div class="dropdown">
-                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                  Choose Disaster
-                                                </a>
-                                              
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Ailment</a></li>
-                                                  <li><a class="dropdown-item" href="#">Asthma</a></li>
-                                                  <li><a class="dropdown-item" href="#">dying</a></li>
-                                                </ul>
-                                              </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <input type="text" name="gender" id="gender"  class="form-control" placeholder="male/female">
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
-                                            <button type="submit" class="form-control" id="submit-button">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
 
                             </div>
                         </div>
@@ -182,6 +165,17 @@
                 </div>
             </section>
 
+        <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
+            <p class="copyright-text">Copyright © Medic Care 2021 
+            <br><br>Design: <a href="https://templatemo.com" target="_parent">TemplateMo</a></p>
+        </div>
+        <div class="card">
+            <div class="card-border-top">
+            </div>
+            <div class="img">
+            </div>
+            <span> </span>
+            <p id="job"> </p>
         </main>
 
         <footer class="site-footer section-padding" id="contact">
@@ -230,11 +224,8 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
-                        <p class="copyright-text">Copyright © Medic Care 2021 
-                        <br><br>Design: <a href="https://templatemo.com" target="_parent">TemplateMo</a></p>
-                    </div>
-
+                        
+                      </div>
                 </div>
             </section>
         </footer>

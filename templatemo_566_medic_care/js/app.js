@@ -159,13 +159,64 @@
 
 // ---------------------------------------------------------------------
 // EventTask:
-function myFunction() {
-  let formen = document.getElementById("uform")
-  let username = document.getElementById("name");
-  let uservar = object.value();
-  localStorage.setItem()
-  
-}
+const form = document.getElementById("uform");
+// form.addEventListener('submit', function (event) {
+//   event.preventDefault()
+  // let messages = []
+  // if (gender !== "male" && gender !== "female") {
+  //   messages.push("Enter a valid gender")
+  // }
+
+  const user = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const order = document.getElementById("password").value;
+  const gender = document.getElementById("gender").value;
+  const check = document.getElementById("dropdown-menu");
+  const p = document.getElementById("job").value;
+  const par = document.getElementById("info");
+  const handler = document.getElementById("handler").value;
+  const infos = [user, age, order, gender, check];
+//   localStorage.setItem("Patient", infos);
+//   localStorage.setItem("Patient",JSON.stringify(user));
+//   document.getElementById("uform").reset();
+
+// });
+
+// $(document).on("click", ":submit", function(e) {
+//   var stuff = ($('#email').val());
+//     // Load emails
+//   var emails = JSON.parse(localStorage.getItem('EmailsStuff'));
+//   if (emails) {
+//     // If the item exists in local storage push the new email address to the array and and save
+//     emails.push(stuff);
+//     localStorage.setItem('EmailsStuff', JSON.stringify(emails));
+//   } else {
+//     // If the item doesn't exist in local storage set the item to a new array containing new email address
+//     localStorage.setItem('EmailsStuff', JSON.stringify([stuff]));
+//   }
+// });
+
+// $(document).on("click", "#loadEmail", function(e) {
+//   alert(JSON.parse(localStorage.getItem('EmailsStuff')));
+// });
+
+$(infos).on("click", ":submit", function(e) {
+  var stuff = ($('#uform').val());
+    // Load emails
+  var infos = JSON.parse(localStorage.getItem('uform'));
+  if (infos) {
+    // If the item exists in local storage push the new email address to the array and and save
+    infos.push(p);
+    localStorage.setItem('uform', JSON.stringify(infos));
+  } else {
+    // If the item doesn't exist in local storage set the item to a new array containing new email address
+    localStorage.setItem('uform', JSON.stringify([infos]));
+  }
+});
+
+$(document).on("click", "#loadEmail", function(e) {
+  alert(JSON.parse(localStorage.getItem('uform')));
+});
 
 
 
