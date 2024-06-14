@@ -131,29 +131,30 @@
                     <div class="row">
                     
                        <form id="uform">
-                        <input type="text" id="name" placeholder="Full Name">
-                        <input type="password" id="pass" placeholder="Password">
+                        <input type="text" id="name" placeholder="Full Name" autocomplete="username">
+                        <div class="error"></div>
+                        <input type="password" name="password" id="new-password" autocomplete="new-password">
+                        <div class="error"></div>
+                        <input type="email" >
                         <input type="text" id="gender" placeholder="Gender">
                         <input type="date" id="date" placeholder="5/2/2010">
                         <input type="text" id="age" placeholder="AGE">
                         <input type="text" id="phone" placeholder="Phone number">
-                        <label for="cars">Choose a disaster:</label>
+                        <label>Choose a disaster:</label>
                             <select name="disasters" id="diss">
-                                <option value="volvo">Heart Disease
-                                </option>
-                                <option value="saab">Hypertension</option>
-                                <option value="opel">Asthma</option>
-                                <option value="audi">Cancer</option>
-                                <option value="audi">No </option>
-                                <option value="audi">Cancer</option>
+                                <option value="Heart">Heart Diseaster</option>
+                                <option value="kidney">Hypertension</option>
+                                <option value="asthma">Asthma</option>
+                                <option value="Cancer">Cancer</option>
+                                <option value="no">No </option>
                             </select>
-
-
-                        <div class="col-lg-3 col-md-4 col-6 mx-auto">
                             <input type="submit" id="submit-button" value="submit">
-                        </div>
+                        </form>
+
+
+                        
+                       
                     
-                       </form>
 
                                        
                                 
@@ -166,7 +167,7 @@
             </section>
 
         <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
-            <p class="copyright-text">Copyright © Medic Care 2021 
+            <p class="copyright-text">Copyright © Medic Care 2024
             <br><br>Design: <a href="https://templatemo.com" target="_parent">TemplateMo</a></p>
         </div>
         <div class="card">
@@ -232,10 +233,10 @@
 
         <!-- JAVASCRIPT FILES -->
         <!-- <script src="js/jquery.min.js"></script> -->
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
         <!-- <script src="js/owl.carousel.min.js"></script> -->
         <!-- <script src="js/scrollspy.min.js"></script> -->
-        <script src="/js/app.js"></script>
+        <script src="/templatemo_566_medic_care/js/app.js"></script>
 <!--
 
 TemplateMo 566 Medic Care
