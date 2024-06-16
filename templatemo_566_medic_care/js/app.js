@@ -171,7 +171,7 @@
     //   localStorage.setItem("Patient",JSON.stringify(user));
       // document.getElementById("uform").reset();
       
-      // });
+      // }); //I tried to apply the male/female thing on it ; didn't work
       
 function render(e) {
   e.preventDefault();
@@ -182,67 +182,67 @@ function render(e) {
       let gender = document.getElementById("gender").value;
       let diss = document.getElementById("diss").value;
       let phone = document.getElementById("phone").value;
+      let email = document.getElementById("email").value;
+  let img = document.getElementById("imag").value;
   const obj = {
     name: user,
     birth: age,
     password: passw,
     Gender: gender,
     disaster: diss,
-    number: phone
-   
-  
+    number: phone,
+    Email: email,
+    pics: img,
   };
   backup.push(obj);
   localStorage.setItem("Patient", JSON.stringify(backup));
-
+  let theLength = /.{8,32}/;
+  let SpecialCase = /[^A-Za-z0-9]/;
+  let lowerCase = /[a-z]/;
+  let UpperCase = /[A-Z]/;
+  let numberCase = /[0-8]/;
+  if (
+    theLength.test(passw) &&
+    SpecialCase.test(passw) &&
+    lowerCase.test(passw) &&
+    UpperCase.test(passw) &&
+    numberCase.test(passw)
+  ) {
+    console.log("matches");
+  } else {
+    console.log("try harder");
+  }
+  let nameSpace = /^\S*\s*\S*$/g;
+  if (
+  nameSpace.test(user)
+  ) {
+    console.log("youre good");
+  } else {
+    console.log("no white spaces");
+  }
+  let emailCase = /[zA-Z0-9.-]+.[a-zA-Z]{2,}/;
+  if (
+  emailCase.test(email)
+  ) {
+    console.log("valid email")
+  } else {
+    console.log("Invalid email")
+  }
+  let phoneCase = /^(\([0-9]{3}\)\s*|[0-9]{3}\-)[0-9]{3}-[0-9]{4}$/;
+  if (
+    phoneCase.test(phone)
+  ) {
+    console.log("good")
+  } else {
+    console.log("das ist falsch")
+  }
 }
 const form = document.getElementById("uform");
 form.addEventListener('submit', render);
-// function cons(fullName, gender,age,phone,password,) {
-  
-// }
-// ---------------------------
-// function validate() {
- 
-//   let user = document.getElementById("new-password").value;
-//   let user2 = document.getElementById("new-password");
-//   let re = 
-//       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//   if (re.test(user)) {
-//       alert("done");
-//       return true;
-//   }
-//   else {
-//       user2.style.border = "red solid 3px";
-//       return false;
-//   }
-// }
 
+//my coowrkers tried to teach me about the construtor , still didn't understand; I think I should ask my coach for it
+// --------------Regex--------------
 
-  const SetError =()
-
-
-
-  // var stuff = ($('#uform').val());
-    // Load emails
-  // var infos = JSON.parse(localStorage.getItem('uform'));
-  // if (infos) {
-    // If the item exists in local storage push the new email address to the array and and save
-  //   infos.push(p);
-  //   localStorage.setItem('uform', JSON.stringify(infos));
-  // } else {
-    // If the item doesn't exist in local storage set the item to a new array containing new email address
-  //   localStorage.setItem('uform', JSON.stringify([infos]));
-  // }
-
-
-  
-// });
-
-
-// $(document).on("click", "#loadEmail", function(e) {
-//   alert(JSON.parse(localStorage.getItem('uform')));
-// });
 
 
 

@@ -960,8 +960,60 @@ strong {
  }
  
 
- input, select , label{
-  display: block;
-  margin: auto;
+ .row input, select{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #e43131;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
  }
- 
+ .row {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+ }
+ .row label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+ }
+ #submit-button{
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 170px;
+  height: 40px;
+  line-height: 1;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 3px solid #8C82FC;
+  background: #fff;
+  color: #8C82FC;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all .35s;
+ }
+ #submit-button:hover{
+  background: #8C82FC;
+  color: #fff;
+ }
+ #submit-button span{
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s;
+ }
